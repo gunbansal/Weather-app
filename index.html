@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="weather-card hidden" id="weatherCard">
+      <div class="weather-header">
+        <h2 id="cityName">City Name</h2>
+        <p id="dateTime"></p>
+      </div>
+      <div class="weather-main">
+        <i class="fas fa-sun" id="weatherIcon"></i>
+        <div class="temp" id="temperature">--°C</div>
+        <div class="description" id="weatherDesc">---</div>
+      </div>
+      <div class="extras">
+        <div><i class="fas fa-tint"></i> <span id="humidity">--%</span> Humidity</div>
+        <div><i class="fas fa-wind"></i> <span id="wind">-- km/h</span> Wind</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
